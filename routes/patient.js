@@ -85,7 +85,7 @@ module.exports = {
                 return res.status(500).send(err);
             }
             res.render('edit-patient.ejs', {
-                title: "Edit  Player"
+                title: "Edit  Patient"
                 ,player: result[0]
                 ,message: ''
             });
