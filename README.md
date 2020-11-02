@@ -18,11 +18,6 @@ Clone this repo
 git clone https://github.com/gagandayal829/fs1030_FinalMod.git
 ```
 
-Initializes the app
-
-```
-npm init
-```
 
 Install the dependencies
 
