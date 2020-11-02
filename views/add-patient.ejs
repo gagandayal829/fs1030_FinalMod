@@ -1,0 +1,78 @@
+<%- include ('./partials/header.ejs') %>
+    <div class="container">
+        <% if (message != '') { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        <form class="add-player-form" action="" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="first_name" id="first-name" placeholder="First Name" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="last_name" id="last-name" placeholder="Last Name" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="address" id="address" placeholder="Patient Address" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="number" class="form-control" name="number" id="number" placeholder="Mobile No." required>
+                </div> 
+               <!-- <div class="form-group col-md-4">
+                    <select id="position" name="position" class="form-control" required>
+                        <option selected disabled>Choose position</option>
+                        <option>Goalkeeper</option>
+                        <option>Defender</option>
+                        <option>Midfielder</option>
+                        <option>Forward</option>
+                    </select>
+                </div> -->
+                <div class="form-group col-md-4">
+                    <input type="number" class="form-control" name="age" id="age" placeholder="Enter Patient's age" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="sex" id="sex" placeholder="Sex" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="laboratory_result" id="laboratory-result" placeholder="Lab Result" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="immunization_status" id="immunization-status" placeholder="Immunization Status" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="medication" id="medication" placeholder="Medication" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="allergies" id="allergies" placeholder="Allergies" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="medical_history" id="medical-history" placeholder="Any Medical History" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <select id="careprovider-id" name="careprovider_id" class="form-control" required>
+                        <option selected disabled>Select Careprovider</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="notes" id="notes" placeholder="Notes for Patient" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-12">
+                    <label for="player-img"><b>Patient Image</b></label><br>
+                    <input type="file" name="image" id="player-img" class="" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary float-right">Add Patient</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
